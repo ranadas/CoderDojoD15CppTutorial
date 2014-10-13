@@ -12,6 +12,8 @@ using namespace std;
 /*
  * 
  */
+void printInt();
+
 int main1(int argc, char** argv) {
     cout << "Hello World" << endl;
     
@@ -25,5 +27,11 @@ int main1(int argc, char** argv) {
     
     // calculate volume = area * length
     cout << "The volume is " << ((radius * radius * 3.14159) * length)  << endl;
+    
+    printInt();
     return 0;
+}
+
+void printInt() {
+    cout<< "Here";
 }
