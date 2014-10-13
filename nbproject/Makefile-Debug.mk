@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/SampleMain.o
+	${OBJECTDIR}/SampleMain.o \
+	${OBJECTDIR}/VariableScope.o
 
 
 # C Compiler Flags
@@ -66,6 +67,11 @@ ${OBJECTDIR}/SampleMain.o: SampleMain.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SampleMain.o SampleMain.cpp
+
+${OBJECTDIR}/VariableScope.o: VariableScope.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/VariableScope.o VariableScope.cpp
 
 # Subprojects
 .build-subprojects:
