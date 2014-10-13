@@ -13,6 +13,17 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    cout << "Hello World";
+    cout << "Hello World" << endl;
+    
+    double radius, length;
+    // accept some user input
+    cout << "Enter the radius and length of cylinder" << endl;       
+    cin >> radius >> length;
+    
+    // calculate area and print
+    cout << "The area is " << (radius * radius * 3.14159) << endl;
+    
+    // calculate volume = area * length
+    cout << "The volume is " << ((radius * radius * 3.14159) * length)  << endl;
     return 0;
 }
