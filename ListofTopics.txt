@@ -1,0 +1,18 @@
+Topics Covered.
+Basics of C++
+ Structure of a program 
+ Variables. Data Types
+ Constants
+ Operators  
+ Basic Input/Output
+ Control Structures
+ Control Structures
+ Functions (I)
+ Functions (II) 
+ Compound data types 
+ Arrays  
+ Character Sequences 
+ Pointers 
+ Dynamic Memory
+ Data structures
+ Other Data Types
