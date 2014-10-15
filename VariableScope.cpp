@@ -22,7 +22,12 @@ int main(int argc, char** argv) {
 }
 
 void printarray(char arg[], int length) {
-    cout << "Size : " << sizeof(arg) << endl;
+    cout << "Size : " << sizeof(arg) << " or "<< (unsigned)strlen(arg) << endl;
+    printf ("The sentence entered is %u characters long.\n",(unsigned)strlen(arg));
+    
+    int lengthOfString = sizeof(arg)/sizeof(char);
+    cout << "Length : " << lengthOfString << endl;
+    
     for (int n = 0; n < length; ++n)
         cout << arg[n] << ' ';
     cout << '\n';
