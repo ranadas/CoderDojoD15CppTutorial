@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/SampleMain.o
+	${OBJECTDIR}/SampleMain.o \
+	${OBJECTDIR}/VariableScope.o \
+	${OBJECTDIR}/tictactoe.o
 
 
 # C Compiler Flags
@@ -66,6 +68,16 @@ ${OBJECTDIR}/SampleMain.o: SampleMain.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SampleMain.o SampleMain.cpp
+
+${OBJECTDIR}/VariableScope.o: VariableScope.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/VariableScope.o VariableScope.cpp
+
+${OBJECTDIR}/tictactoe.o: tictactoe.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tictactoe.o tictactoe.cpp
 
 # Subprojects
 .build-subprojects:
